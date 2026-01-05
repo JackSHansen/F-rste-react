@@ -1,10 +1,3 @@
-/* Omdøb denne fil til globals.css og opdatér import i main.tsx for at droppe Sass helt. */
-
-/* Hvis du ikke vil bruge Sass:
-   - Konverter alle SCSS-filer til ren CSS (ingen nesting, ingen // kommentarer)
-   - Omdøb denne fil til globals.css og opdatér imports
-*/
-
 html, body, #root {
   height: 100%;
 }

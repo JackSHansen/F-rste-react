@@ -3,7 +3,6 @@ import './dropdown.css'
 
 type LinkItem = { href: string; label: string }
 
-// kun 5 links
 const ALL_LINKS: LinkItem[] = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
