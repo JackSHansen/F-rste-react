@@ -1,3 +1,13 @@
-import '../styles/navbar.css'
+import './navbar.css'
 
-export { NavBar } from './NavBar/ui/NavBar'
+export const NavBar = () => {
+  return (
+    <nav>
+      <ul>
+        <li><a href="#">Forside</a></li>
+        <li><a href="#">Om</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  )
+}

@@ -1,6 +1,4 @@
-import '../styles/main.css'
-
-export { Main } from './Main/ui/Main'
+import './main.css'
 
 export const Main = () => {
   return (

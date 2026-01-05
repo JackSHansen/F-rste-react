@@ -1,0 +1,18 @@
+:root {
+  --color-bg: #0b1220;
+  --color-surface: #0f172a;
+  --color-text: #e5e7eb;
+  --color-muted: #94a3b8;
+  --color-primary: #3b82f6;
+  --color-border: #334155;
+  --radius: 10px;
+  --focus-ring: 0 0 0 3px rgba(59, 130, 246, 0.35);
+}
+
+footer {
+  background: #0f172a;
+  border-top: 1px solid #334155;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  color: #94a3b8;
+}/*# sourceMappingURL=footer.css.map */

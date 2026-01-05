@@ -1,10 +1,9 @@
+@charset "UTF-8";
 /* Omdøb denne fil til globals.css og opdatér import i main.tsx for at droppe Sass helt. */
-
 /* Hvis du ikke vil bruge Sass:
    - Konverter alle SCSS-filer til ren CSS (ingen nesting, ingen // kommentarer)
    - Omdøb denne fil til globals.css og opdatér imports
 */
-
 html, body, #root {
   height: 100%;
 }
@@ -23,7 +22,7 @@ body {
 
 a {
   text-decoration: none;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 }
 
 a:hover {
@@ -38,4 +37,4 @@ a:focus-visible {
 
 ::selection {
   background: rgba(59, 130, 246, 0.35);
-}
+}/*# sourceMappingURL=globals.css.map */

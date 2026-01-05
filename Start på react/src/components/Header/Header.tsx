@@ -1,5 +1,5 @@
 import { NavBar } from '../NavBar/NavBar'
-import '../styles/header.css'
+import './header.css'
 
 export const Header = () => {
   return (
