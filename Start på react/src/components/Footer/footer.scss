@@ -1,0 +1,9 @@
+@use './tokens';
+
+footer {
+  background: tokens.$color-surface;
+  border-top: 1px solid tokens.$color-border;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  color: tokens.$color-muted;
+}

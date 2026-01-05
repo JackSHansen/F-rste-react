@@ -1,0 +1,36 @@
+@use './tokens';
+
+html, body, #root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: tokens.$color-bg;
+  color: tokens.$color-text;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: tokens.$color-primary;
+  text-decoration: none;
+  transition: color .2s ease;
+  &:hover { text-decoration: underline; }
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+    border-radius: var(--radius);
+  }
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: tokens.$color-text;
+}

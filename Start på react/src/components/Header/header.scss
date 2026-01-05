@@ -1,0 +1,8 @@
+@use './tokens';
+
+header {
+  background: tokens.$color-surface;
+  border-bottom: 1px solid tokens.$color-border;
+  padding: 1rem 1.25rem;
+  color: tokens.$color-text;
+}
