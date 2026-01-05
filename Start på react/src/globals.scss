@@ -39,3 +39,11 @@ a:focus-visible {
 ::selection {
   background: rgba(59, 130, 246, 0.35);
 }
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 16px;
+}

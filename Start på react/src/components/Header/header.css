@@ -14,4 +14,18 @@ header {
   border-bottom: 1px solid #334155;
   padding: 1rem 1.25rem;
   color: #e5e7eb;
-}/*# sourceMappingURL=header.css.map */
+}
+
+.site-header {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
