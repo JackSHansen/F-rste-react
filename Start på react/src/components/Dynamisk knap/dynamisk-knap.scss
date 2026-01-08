@@ -1,0 +1,54 @@
+.btn {
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease, transform 80ms ease;
+  user-select: none;
+
+  &:active {
+    transform: translateY(1px) scale(0.99);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+  }
+}
+
+/* Size modifiers */
+.btn--small {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+.btn--medium {
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+}
+
+.btn--large {
+  padding: 0.7rem 1.1rem;
+  font-size: 1.1rem;
+}
+
+/* Theme modifiers */
+.btn--light {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #e2e8f0;
+
+  &:hover {
+    background: #eef2f7;
+  }
+}
+
+.btn--dark {
+  background: #1f2937;
+  color: #e5e7eb;
+  border-color: #374151;
+
+  &:hover {
+    background: #111827;
+  }
+}

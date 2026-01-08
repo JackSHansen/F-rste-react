@@ -1,6 +1,8 @@
 .dropdown {
-  width: auto; /* was 100% */
+  width: auto;
   position: relative;
+  background-color: #0f172a;
+  color: #e5e7eb;
 }
 
 .dropdown__inner {
@@ -8,10 +10,11 @@
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1rem;
 }
 
-.dropdown__brand { display: none; }
+.dropdown__brand {
+  display: none;
+}
 
 .dropdown__toggle {
   appearance: none;
@@ -26,21 +29,23 @@
 .dropdown__links {
   list-style: none;
   margin: 0;
-  padding: 0.25rem 0;
+  padding: 0;
   display: none;
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
   min-width: 180px;
-  background-color: #0f172a;
-  color: #e5e7eb;
+  padding: 0.25rem 0;
+  background: #0f172a;
   border: 1px solid #334155;
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   z-index: 1000;
 }
 
-.dropdown__links.is-open { display: block; }
+.dropdown__links.is-open {
+  display: block;
+}
 
 .dropdown__links a {
   color: inherit;
@@ -48,10 +53,16 @@
   padding: 0.5rem 0.75rem;
   display: block;
 }
+
 .dropdown__links a:hover {
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
 }
 
+/* Remove desktop override that hid the button and always showed links */
 @media (min-width: 768px) {
-  .dropdown__toggle { display: inline-block; }
-}
+  .dropdown__inner { /* keep layout tidy */ }
+  .dropdown__toggle {
+    display: inline-block;
+  }
+  .dropdown__links { /* do not force display flex */ }
+}/*# sourceMappingURL=dropdown.css.map */
