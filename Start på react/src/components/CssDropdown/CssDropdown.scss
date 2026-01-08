@@ -1,0 +1,72 @@
+.css-dropdown {
+  position: relative;
+  display: inline-block;
+
+  .trigger {
+    list-style: none; // remove default marker
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    background: #fff;
+    color: #24292f;
+    font-size: 0.95rem;
+    user-select: none;
+  }
+
+  // hide default marker in webkit
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .chevron {
+    transition: transform 150ms ease;
+  }
+
+  .menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    min-width: 180px;
+    padding: 6px 0;
+    margin: 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity 150ms ease, transform 150ms ease;
+
+    li {
+      padding: 0;
+
+      a {
+        display: block;
+        padding: 8px 12px;
+        color: #24292f;
+        text-decoration: none;
+
+        &:hover {
+          background: #f6f8fa;
+        }
+      }
+    }
+  }
+
+  &[open] {
+    .chevron {
+      transform: rotate(180deg);
+    }
+    .menu {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  }
+}
